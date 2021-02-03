@@ -22,7 +22,7 @@ namespace Projet_Bulletin
         private void InitConnexion()
         {
             // Création de la chaîne de connexion
-            string connectionString = "SERVER=127.0.0.1; DATABASE=bdd_bulletinsasi; UID=root; PASSWORD=";
+            string connectionString = "SERVER=localhost; PORT=3308; DATABASE=bdd_bulletinsasi; UID=root; PASSWORD=";
             this.connection = new MySqlConnection(connectionString);
         }
 
@@ -56,7 +56,7 @@ namespace Projet_Bulletin
                 // Fermeture de la connexion
                 this.connection.Close();
             }
-            catch
+            catch(MySqlException mse)
             {
                 // Gestion des erreurs :
                 // Possibilité de créer un Logger pour les exceptions SQL reçus
@@ -106,7 +106,6 @@ namespace Projet_Bulletin
                 // Possibilité de créer une méthode avec un booléan en retour pour savoir si le eleves à été ajouté correctement.
             }
 
-
         }
 
         public void AddAnnee2(annee2 annee2)
@@ -141,7 +140,6 @@ namespace Projet_Bulletin
                 cmd.Parameters.AddWithValue("@Arduino", annee2.Arduino);
                 cmd.Parameters.AddWithValue("@Projet", annee2.Projet);
                 cmd.Parameters.AddWithValue("@Livret_de_Suivi", annee2.Livret_de_suivi);
-
             }
             catch
             {

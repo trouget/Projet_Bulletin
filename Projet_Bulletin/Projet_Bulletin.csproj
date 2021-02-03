@@ -98,6 +98,8 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="annee1.cs" />
+    <Compile Include="annee2.cs" />
     <Compile Include="BDDConnection.cs" />
     <Compile Include="eleves.cs" />
     <Compile Include="gen_1.cs">

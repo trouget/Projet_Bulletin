@@ -8,6 +8,13 @@ namespace Projet_Bulletin
 {
     public class eleves
     {
+        private int v1;
+        private int v2;
+        private string v3;
+        private string v4;
+        private string v5;
+        private int v6;
+
         // Création de 3 propriétés identifiant, nom et téléphone
         public int id_eleve { get; set; }
         public int Moyenne_annee1 { get; set; }
@@ -21,6 +28,17 @@ namespace Projet_Bulletin
         public eleves()
         {
 
+        }
+
+        public eleves(int uneMoyenne_annee1, int uneMoyenne_annee2, string unNom, string unPrenom, string unePromotion, DateTime uneAnnee, int uneObtention)
+        {
+            this.Moyenne_annee1 = uneMoyenne_annee1;
+            this.Moyenne_annee2 = uneMoyenne_annee2;
+            this.nom = unNom;
+            this.prenom = unPrenom;
+            this.promotion = unePromotion;
+            this.annee = uneAnnee;
+            this.obtention = uneObtention;
         }
     }
 }
