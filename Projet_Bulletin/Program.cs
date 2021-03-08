@@ -18,7 +18,7 @@ namespace Projet_Bulletin
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new gen_1());
 
-            eleves eleve1 = new eleves(0, 0, "gerard", "dupont", "asi1", DateTime.Now, 0);
+            eleves eleve1 = new eleves(16, 12, "toto", "dupont", "asi2", DateTime.Now, 0);
 
             annee1 anneeGerard1 = new annee1(10, 16, 17, 11, 10, 12, 13, 9, 6, 15, 15, 10, 6, 2, 14, 10, 2, 15, 17);
 
@@ -28,6 +28,9 @@ namespace Projet_Bulletin
                 BDD1.AddEleve(eleve1);
                 BDD1.AddAnnee1(anneeGerard1);
                 BDD1.AddAnnee2(anneeGerard2);
+                BDD1.DeleteEleve(eleve1);
+
+            
         }
     }
 }

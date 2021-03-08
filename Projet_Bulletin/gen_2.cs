@@ -16,5 +16,29 @@ namespace Projet_Bulletin
         {
             InitializeComponent();
         }
+
+        private void btn_valider_Click(object sender, EventArgs e)
+        {
+            double note_anglais = Convert.ToInt32(tbx_anglais.Text);
+            double note_droit = Convert.ToInt32(tbx_droit.Text);
+            double note_livret = Convert.ToInt32(tbx_livret.Text);
+            double note_maths = Convert.ToInt32(tbx_maths.Text);
+            double note_projet = Convert.ToInt32(tbx_projet.Text);
+            double note_bigData = Convert.ToInt32(tbx_bigData.Text);
+            double note_technoWeb = Convert.ToInt32(tbx_technoWeb.Text);
+            double note_suiviProjet = Convert.ToInt32(tbx_suiviProjet.Text);
+            double note_appHybrid = Convert.ToInt32(tbx_appHybrid.Text);
+            double note_jee = Convert.ToInt32(tbx_jee.Text);
+            double note_arduino = Convert.ToInt32(tbx_arduino.Text);
+            double note_infraScript = Convert.ToInt32(tbx_infraScript.Text);
+            double note_SystOpn = Convert.ToInt32(tbx_SystOpn.Text);
+            double note_secu = Convert.ToInt32(tbx_secu.Text);
+            double note_AdminRes = Convert.ToInt32(tbx_adminRes.Text);
+            double note_SystPro = Convert.ToInt32(tbx_SystPro.Text);
+            double note_deploiSrv = Convert.ToInt32(tbx_deplsrv.Text);
+            double note_resultat = Convert.ToInt32(tbx_resultat.Text);
+
+
+        }
     }
 }

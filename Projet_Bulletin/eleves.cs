@@ -8,14 +8,8 @@ namespace Projet_Bulletin
 {
     public class eleves
     {
-        private int v1;
-        private int v2;
-        private string v3;
-        private string v4;
-        private string v5;
-        private int v6;
 
-        // Création de 3 propriétés identifiant, nom et téléphone
+        // Création des propriétés de l'élève 
         public int id_eleve { get; set; }
         public int Moyenne_annee1 { get; set; }
         public int Moyenne_annee2 { get; set; }

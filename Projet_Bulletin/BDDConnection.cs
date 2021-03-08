@@ -65,8 +65,62 @@ namespace Projet_Bulletin
 
         }
 
-        public void AddAnnee1(annee1 annee1)
+        // Suppresssion de l'année 2 
+        public void DeleteEleve(eleves eleve)
         {
+            try
+            {
+                // Ouverture de la connexion SQL
+                this.connection.Open();
+
+                // Création d'une commande SQL en fonction de l'objet connection
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "DELETE from eleve where id_eleve = " + eleve.id_eleve + "  ";
+
+            }
+            catch (MySqlException mse)
+            {
+                // Gestion des erreurs :
+                // Possibilité de créer un Logger pour les exceptions SQL reçus
+                // Possibilité de créer une méthode avec un booléan en retour pour savoir si le eleves à été ajouté correctement.
+            }
+        }
+
+        public void modifyEleve(eleves eleve)
+        {
+            try
+            {
+                // Ouverture de la connexion SQL
+                this.connection.Open();
+
+                // Création d'une commande SQL en fonction de l'objet connection
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "UPDATE eleve SET id_eleve = @id_eleve, Moyenne_annee1 = @Moyenne_annee1,  Moyenne_annee2 = @Moyenne_annee2, nom = @nom, prenom = @prenom, promotion = @promotion, annee = @annee, obtention = @obtention) WHERE id_eleve = " + eleve.id_eleve + " ";
+
+                // utilisation de l'objet eleves passé en paramètre
+                cmd.Parameters.AddWithValue("@id_eleve", eleve.id_eleve);
+                cmd.Parameters.AddWithValue("@Moyenne_annee1", eleve.Moyenne_annee1);
+                cmd.Parameters.AddWithValue("@Moyenne_annee2", eleve.Moyenne_annee2);
+                cmd.Parameters.AddWithValue("@nom", eleve.nom);
+                cmd.Parameters.AddWithValue("@prenom", eleve.prenom);
+                cmd.Parameters.AddWithValue("@promotion", eleve.promotion);
+                cmd.Parameters.AddWithValue("@annee", eleve.annee);
+                cmd.Parameters.AddWithValue("@obtention", eleve.obtention);
+            }
+            catch (MySqlException mse)
+            {
+                // Gestion des erreurs :
+                // Possibilité de créer un Logger pour les exceptions SQL reçus
+                // Possibilité de créer une méthode avec un booléan en retour pour savoir si le eleves à été ajouté correctement.
+            }
+
+        }
+
+
+        public void AddAnnee1(annee1 annee1)
+            {
             try
             {
                 // Ouverture de la connexion SQL
@@ -100,6 +154,71 @@ namespace Projet_Bulletin
                 cmd.Parameters.AddWithValue("@Management", annee1.Management);
             }
             catch(MySqlException mse)
+            {
+                // Gestion des erreurs :
+                // Possibilité de créer un Logger pour les exceptions SQL reçus
+                // Possibilité de créer une méthode avec un booléan en retour pour savoir si le eleves à été ajouté correctement.
+            }
+
+        }
+
+        // Suppresssion de l'année 2 
+        public void DeleteAnnee1(annee1 annee1)
+        {
+            try
+            {
+                // Ouverture de la connexion SQL
+                this.connection.Open();
+
+                // Création d'une commande SQL en fonction de l'objet connection
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "DELETE from annee1 where id_bulletin1 = " + annee1.id_bulletin1 + "  ";
+
+            }
+            catch (MySqlException mse)
+            {
+                // Gestion des erreurs :
+                // Possibilité de créer un Logger pour les exceptions SQL reçus
+                // Possibilité de créer une méthode avec un booléan en retour pour savoir si le eleves à été ajouté correctement.
+            }
+        }
+
+        public void modifyAnnee1(annee1 annee1)
+        {
+            try
+            {
+                // Ouverture de la connexion SQL
+                this.connection.Open();
+
+                // Création d'une commande SQL en fonction de l'objet connection
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                cmd.CommandText = "UPDATE annee1 SET id_bulletin1 = @id_bulletin1, Moyenne1 = @Moyenne1, Administration_réseau = @Administration_réseau, Anglais_technique = @Anglais_technique, Base_de_données = @Base_de_données, Communication_écrite = @Communication_écrite, Conception_et_modélisation = @Conception_et_modélisation, Controle_de_gestion = @Controle_de_gestion, Gestion_de_projet = @Gestion_de_projet, Infrastructure_et_scripting = @Infrastructure_et_scripting, JSE = @JSE,  Droit_informatique = @Droit_informatique, Infrastructure_et_scripting = @Infrastructure_et_scripting, Outils_mathematiques = @Outils_mathematiques, Securite = @Securite, Systeme_open_source = @Systeme_open_source, Systeme_proprietaire = @Systeme_proprietaire, Technologie_web_dynamique = @Technologie_web_dynamique, Framework_web = @Framework_web, Livret_de_Suivi = @Livret_de_Suivi, Management = @Management) WHERE id_bulletin1 = " + annee1.id_bulletin1 + " ";
+
+                // utilisation de l'objet annee1 passé en paramètre
+                cmd.Parameters.AddWithValue("@id_bulletin1", annee1.id_bulletin1);
+                cmd.Parameters.AddWithValue("@Moyenne1", annee1.Moyenne1);
+                cmd.Parameters.AddWithValue("@Administration_réseau", annee1.Administration_réseau);
+                cmd.Parameters.AddWithValue("@Anglais_technique", annee1.Anglais_technique);
+                cmd.Parameters.AddWithValue("@Base_de_données", annee1.Base_de_données);
+                cmd.Parameters.AddWithValue("@Communication_écrite", annee1.Communication_écrite);
+                cmd.Parameters.AddWithValue("@Conception_et_modélisation", annee1.Conception_et_modélisation);
+                cmd.Parameters.AddWithValue("@Controle_de_Gestion", annee1.Controle_de_gestion);
+                cmd.Parameters.AddWithValue("@Gestion_de_projet", annee1.Gestion_de_projet);
+                cmd.Parameters.AddWithValue("@Infrastructure_et_scripting", annee1.Infrastructure_et_scripting);
+                cmd.Parameters.AddWithValue("@JSE", annee1.JSE);
+                cmd.Parameters.AddWithValue("@Securite", annee1.Securite);
+                cmd.Parameters.AddWithValue("@Systeme_open_source", annee1.Systeme_open_source);
+                cmd.Parameters.AddWithValue("@Systeme_proprietaire", annee1.Systeme_proprietaire);
+                cmd.Parameters.AddWithValue("@Technologie_web_dynamique", annee1.Technologie_web_dynamique);
+                cmd.Parameters.AddWithValue("@Droit_informatique", annee1.Droit_informatique);
+                cmd.Parameters.AddWithValue("@Framework_web", annee1.Framework_web);
+                cmd.Parameters.AddWithValue("@Outils_mathematiques", annee1.Outils_informatique);
+                cmd.Parameters.AddWithValue("@Livret_de_suivi", annee1.Livret_de_suivi);
+                cmd.Parameters.AddWithValue("@Management", annee1.Management);
+            }
+            catch (MySqlException mse)
             {
                 // Gestion des erreurs :
                 // Possibilité de créer un Logger pour les exceptions SQL reçus
