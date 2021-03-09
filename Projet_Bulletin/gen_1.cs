@@ -50,7 +50,18 @@ namespace Projet_Bulletin
             double note_secu = Convert.ToInt32(tbx_secu.Text);
             double note_AdminRes = Convert.ToInt32(tbx_adminRes.Text);
             double note_SystPro = Convert.ToInt32(tbx_SystPro.Text);
-            double resultat = Convert.ToInt32(tbx_resultat);
+
+            double reseau, dev, management;
+
+            reseau = (note_AdminRes + note_infraScript + note_secu + note_SystOpn + note_SystPro) / 5;
+            dev = (note_concepMod + (note_jse * 2) + note_technoWeb + note_framework) / 5;
+            management = ((note_contGest * 3) + note_mana) / 4;
+
+
+            double resultat = ((reseau * 3) + (dev * 3) + (management * 2) + note_anglais + note_bdd + note_comEcrite + (note_gestProjet * 3) + note_droit + (note_maths * 3) + (note_livret * 12)) / 30;
+            label_moyenne.Text = Convert.ToString(resultat);
+            
         }
+
     }
 }

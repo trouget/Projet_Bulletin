@@ -68,6 +68,8 @@
             this.matiere_1 = new System.Windows.Forms.PictureBox();
             this.btn_retour = new System.Windows.Forms.Button();
             this.tbx_resultat = new System.Windows.Forms.TextBox();
+            this.label_fixe = new System.Windows.Forms.Label();
+            this.label_moyenne = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.matiere_1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -416,11 +418,31 @@
             this.tbx_resultat.Size = new System.Drawing.Size(100, 22);
             this.tbx_resultat.TabIndex = 73;
             // 
+            // label_fixe
+            // 
+            this.label_fixe.AutoSize = true;
+            this.label_fixe.Location = new System.Drawing.Point(593, 671);
+            this.label_fixe.Name = "label_fixe";
+            this.label_fixe.Size = new System.Drawing.Size(122, 17);
+            this.label_fixe.TabIndex = 73;
+            this.label_fixe.Text = "Moyenne année : ";
+            // 
+            // label_moyenne
+            // 
+            this.label_moyenne.AutoSize = true;
+            this.label_moyenne.Location = new System.Drawing.Point(737, 671);
+            this.label_moyenne.Name = "label_moyenne";
+            this.label_moyenne.Size = new System.Drawing.Size(8, 17);
+            this.label_moyenne.TabIndex = 74;
+            this.label_moyenne.Text = "\r\n";
+            // 
             // gen_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 734);
+            this.Controls.Add(this.label_moyenne);
+            this.Controls.Add(this.label_fixe);
             this.Controls.Add(this.btn_retour);
             this.Controls.Add(this.btn_valider1);
             this.Controls.Add(this.matiere_1);
@@ -512,6 +534,8 @@
         private System.Windows.Forms.Button btn_valider1;
         private System.Windows.Forms.Button btn_retour;
         private System.Windows.Forms.TextBox tbx_resultat;
+        private System.Windows.Forms.Label label_fixe;
+        private System.Windows.Forms.Label label_moyenne;
     }
 }
 
