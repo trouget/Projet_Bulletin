@@ -17,6 +17,13 @@ namespace Projet_Bulletin
             InitializeComponent();
         }
 
+        private void btn_retour_Click(object sender, EventArgs e)
+        {
+            Accueil ac = new Accueil();
+            ac.Show();
+            this.Close();
+        }
+
         private void btn_valider_Click(object sender, EventArgs e)
         {
             double note_anglais = Convert.ToInt32(tbx_anglais.Text);

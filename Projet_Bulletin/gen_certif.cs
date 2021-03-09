@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Projet_Bulletin
 {
@@ -17,9 +18,12 @@ namespace Projet_Bulletin
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
+        private void btn_retour_Click(object sender, EventArgs e)
+        {
+            Accueil ac = new Accueil();
+            ac.Show();
+            
         }
 
         private void btn_valider_Click(object sender, EventArgs e)

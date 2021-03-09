@@ -150,7 +150,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(636, 322);
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btn_retour
             // 
@@ -161,6 +160,7 @@
             this.btn_retour.TabIndex = 71;
             this.btn_retour.Text = "Retour";
             this.btn_retour.UseVisualStyleBackColor = true;
+            this.btn_retour.Click += new System.EventHandler(this.btn_retour_Click);
             // 
             // tbx_resultat
             // 

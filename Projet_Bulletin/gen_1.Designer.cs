@@ -407,6 +407,7 @@
             this.btn_retour.TabIndex = 72;
             this.btn_retour.Text = "Retour";
             this.btn_retour.UseVisualStyleBackColor = true;
+            this.btn_retour.Click += new System.EventHandler(this.btn_retour_Click);
             // 
             // tbx_resultat
             // 
@@ -420,7 +421,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 734);
-            this.Controls.Add(this.tbx_resultat);
             this.Controls.Add(this.btn_retour);
             this.Controls.Add(this.btn_valider1);
             this.Controls.Add(this.matiere_1);
