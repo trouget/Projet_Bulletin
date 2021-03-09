@@ -331,5 +331,26 @@ namespace Projet_Bulletin
                 // Possibilité de créer une méthode avec un booléan en retour pour savoir si le eleves à été ajouté correctement.
             }
         }
+
+        public List<eleves> tableauBDDAccueil()
+        {
+            List<eleves> els = new List<eleves>();
+
+            // Ouverture de la connexion SQL
+            this.connection.Open();
+
+            // Création d'une commande SQL en fonction de l'objet connection
+            MySqlCommand cmd = this.connection.CreateCommand();
+
+            cmd.CommandText = "SELECT Moyenne_annee1, Moyenne_annee2, nom, prenom, promotion, annee, obtention FROM eleves";
+            MySqlDataReader mySqlDataReader = cmd.ExecuteReader();
+            while (mySqlDataReader.Read())
+            {
+                eleves e = new eleves(Convert.ToInt32(mySqlDataReader["Moyenne_annee1"]), Convert.ToInt32(mySqlDataReader["Moyenne_annee2"]), mySqlDataReader["nom"].ToString(), mySqlDataReader["prenom"].ToString(), mySqlDataReader["promotion"].ToString(), DateTime.Parse((mySqlDataReader["annee"]).ToString()), Convert.ToInt32(mySqlDataReader["obtention"]));
+                els.Add(e);
+            }
+            connection.Close();
+            return els;
+        } 
     }
 }
