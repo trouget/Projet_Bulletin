@@ -22,6 +22,7 @@ namespace Projet_Bulletin
         double note_1annee;
         double note_2annee;
         double resultatFinal;
+        double moyenne;
 
         public gen_certif()
         {
@@ -43,6 +44,7 @@ namespace Projet_Bulletin
             double note_evalEntreprise = Convert.ToInt32(tbx_evalEtp.Text);
             double note_1annee = Convert.ToInt32(tbx_1annee.Text);
             double note_2annee = Convert.ToInt32(tbx_2annee.Text);
+ 
 
 
             double resultatFinal;
@@ -60,14 +62,28 @@ namespace Projet_Bulletin
 
             XFont font = new XFont("Times New Roman", 8, XFontStyle.Regular);
 
-            gfx.DrawString(note_soutenance.ToString(), font, XBrushes.Black, 100, 100);
-            gfx.DrawString(note_projPeda.ToString(), font, XBrushes.Black, 100, 100);
-            gfx.DrawString(note_evalEntreprise.ToString(), font, XBrushes.Black, 100, 100);
-            gfx.DrawString(note_1annee.ToString(), font, XBrushes.Black, 100, 100);
-            gfx.DrawString(note_2annee.ToString(), font, XBrushes.Black, 100, 100);
-            gfx.DrawString(resultatFinal.ToString(), font, XBrushes.Black, 100, 100);
+            gfx.DrawString("Soutenance Oral : ", font, XBrushes.Black, 30, 50);
+            gfx.DrawString(note_soutenance.ToString(), font, XBrushes.Black, 120, 50);
 
-            const string filename = "Bulletin-note.pdf";
+            gfx.DrawString("Projet Pédagogique : ", font, XBrushes.Black, 30, 60);
+            gfx.DrawString(note_projPeda.ToString(), font, XBrushes.Black, 120, 60);
+
+            gfx.DrawString("Evaluation Entreprise : ", font, XBrushes.Black, 30, 70);
+            gfx.DrawString(note_evalEntreprise.ToString(), font, XBrushes.Black, 120, 70);
+
+            gfx.DrawString("Moyenne de 1ère année : ", font, XBrushes.Black, 30, 80);
+            gfx.DrawString(note_1annee.ToString(), font, XBrushes.Black, 120, 80);
+
+            gfx.DrawString("Moyenne de 2ère année : ", font, XBrushes.Black, 30, 90);
+            gfx.DrawString(note_2annee.ToString(), font, XBrushes.Black, 120, 90);
+
+            gfx.DrawString("Resultat Final : ", font, XBrushes.Black, 30, 100);
+            gfx.DrawString(resultatFinal.ToString(), font, XBrushes.Black, 120, 100);
+
+            gfx.DrawString("Moyenne Final : ", font, XBrushes.Black, 30, 110);
+            gfx.DrawString(moyenne.ToString(), font, XBrushes.Black, 120, 110);
+
+            const string filename = "Bulletin-notes.pdf";
             doc.Save(filename);
 
             Process.Start(filename);
