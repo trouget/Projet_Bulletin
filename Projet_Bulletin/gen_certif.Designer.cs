@@ -43,7 +43,6 @@
             this.btn_retour = new System.Windows.Forms.Button();
             this.label_fixe = new System.Windows.Forms.Label();
             this.label_moyenne = new System.Windows.Forms.Label();
-            this.tbx_resultat = new System.Windows.Forms.TextBox();
             this.CreerPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -174,6 +173,13 @@
             this.label_fixe.TabIndex = 72;
             this.label_fixe.Text = "Note certification : ";
             // 
+            // label_moyenne
+            // 
+            this.label_moyenne.Location = new System.Drawing.Point(0, 0);
+            this.label_moyenne.Name = "label_moyenne";
+            this.label_moyenne.Size = new System.Drawing.Size(100, 23);
+            this.label_moyenne.TabIndex = 75;
+            // 
             // CreerPDF
             // 
             this.CreerPDF.Location = new System.Drawing.Point(110, 503);
@@ -190,7 +196,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1396, 812);
             this.Controls.Add(this.CreerPDF);
-            this.Controls.Add(this.tbx_resultat);
             this.Controls.Add(this.label_moyenne);
             this.Controls.Add(this.label_fixe);
             this.Controls.Add(this.btn_retour);
@@ -230,7 +235,6 @@
         private System.Windows.Forms.Button btn_valider;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_retour;
-        private System.Windows.Forms.TextBox tbx_resultat;
         private System.Windows.Forms.Button CreerPDF;
         private System.Windows.Forms.Label label_fixe;
         private System.Windows.Forms.Label label_moyenne;

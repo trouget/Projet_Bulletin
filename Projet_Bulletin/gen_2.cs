@@ -45,9 +45,9 @@ namespace Projet_Bulletin
             double note_deploiSrv = Convert.ToInt32(tbx_deplsrv.Text);
             
             double reseau, dev;
-            reseau = note_AdminRes + note_deploiSrv + note_SystOpn + note_SystPro + note_secu + note_infraScript;
-            dev = note_appHybrid + note_arduino + note_jee;
-            double note_resultat = (note_anglais + note_droit + (note_maths * 3) + note_bigData + (note_livret * 12) + (dev * 3) + (reseau * 3)) / 25;
+            reseau = (note_AdminRes + note_deploiSrv + note_SystOpn + note_SystPro + note_secu + note_infraScript) / 6;
+            dev = (note_appHybrid + note_arduino + note_jee) / 3;
+            double note_resultat = (note_anglais + note_droit + (note_maths * 3) + note_bigData + (note_livret * 12) + (dev * 3) + (reseau * 3)) / 24;
             label_resultat.Text = Convert.ToString(note_resultat);
 
 
