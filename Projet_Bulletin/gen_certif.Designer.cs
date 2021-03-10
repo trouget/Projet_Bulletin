@@ -41,7 +41,8 @@
             this.btn_valider = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_retour = new System.Windows.Forms.Button();
-            this.tbx_resultat = new System.Windows.Forms.TextBox();
+            this.label_fixe = new System.Windows.Forms.Label();
+            this.label_moyenne = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,19 +163,30 @@
             this.btn_retour.UseVisualStyleBackColor = true;
             this.btn_retour.Click += new System.EventHandler(this.btn_retour_Click);
             // 
-            // tbx_resultat
+            // label_fixe
             // 
-            this.tbx_resultat.Location = new System.Drawing.Point(376, 504);
-            this.tbx_resultat.Name = "tbx_resultat";
-            this.tbx_resultat.Size = new System.Drawing.Size(100, 22);
-            this.tbx_resultat.TabIndex = 72;
+            this.label_fixe.AutoSize = true;
+            this.label_fixe.Location = new System.Drawing.Point(634, 561);
+            this.label_fixe.Name = "label_fixe";
+            this.label_fixe.Size = new System.Drawing.Size(126, 17);
+            this.label_fixe.TabIndex = 72;
+            this.label_fixe.Text = "Note certification : ";
+            // 
+            // label_moyenne
+            // 
+            this.label_moyenne.AutoSize = true;
+            this.label_moyenne.Location = new System.Drawing.Point(756, 561);
+            this.label_moyenne.Name = "label_moyenne";
+            this.label_moyenne.Size = new System.Drawing.Size(0, 17);
+            this.label_moyenne.TabIndex = 73;
             // 
             // gen_certif
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1396, 812);
-            this.Controls.Add(this.tbx_resultat);
+            this.Controls.Add(this.label_moyenne);
+            this.Controls.Add(this.label_fixe);
             this.Controls.Add(this.btn_retour);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_valider);
@@ -212,6 +224,7 @@
         private System.Windows.Forms.Button btn_valider;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_retour;
-        private System.Windows.Forms.TextBox tbx_resultat;
+        private System.Windows.Forms.Label label_fixe;
+        private System.Windows.Forms.Label label_moyenne;
     }
 }

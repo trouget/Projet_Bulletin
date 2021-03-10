@@ -8,33 +8,33 @@ namespace Projet_Bulletin
 {
     class annee1
     {
-        public int id_bulletin1 { get; set; }
-        public int Moyenne1 { get; set; }
-        public int Administration_réseau { get; set; }
-        public int Anglais_technique { get; set; }
-        public int Base_de_données { get; set; }
-        public int Communication_écrite { get; set; }
-        public int Conception_et_modélisation { get; set; }
-        public int Controle_de_gestion { get; set; }
-        public int Gestion_de_projet { get; set; }
-        public int Infrastructure_et_scripting { get; set; }
-        public int JSE { get; set; }
-        public int Securite { get; set; }
-        public int Systeme_open_source { get; set; }
-        public int Systeme_proprietaire { get; set; }
-        public int Technologie_web_dynamique { get; set; }
-        public int Droit_informatique { get; set; }
-        public int Framework_web { get; set; }
-        public int Outils_informatique { get; set; }
-        public int Livret_de_suivi { get; set; }
-        public int Management { get; set; }
+        public double id_bulletin1 { get; set; }
+        public double Moyenne1 { get; set; }
+        public double Administration_réseau { get; set; }
+        public double Anglais_technique { get; set; }
+        public double Base_de_données { get; set; }
+        public double Communication_écrite { get; set; }
+        public double Conception_et_modélisation { get; set; }
+        public double Controle_de_gestion { get; set; }
+        public double Gestion_de_projet { get; set; }
+        public double Infrastructure_et_scripting { get; set; }
+        public double JSE { get; set; }
+        public double Securite { get; set; }
+        public double Systeme_open_source { get; set; }
+        public double Systeme_proprietaire { get; set; }
+        public double Technologie_web_dynamique { get; set; }
+        public double Droit_informatique { get; set; }
+        public double Framework_web { get; set; }
+        public double Outils_informatique { get; set; }
+        public double Livret_de_suivi { get; set; }
+        public double Management { get; set; }
 
         public annee1()
         {
 
         }
 
-        public annee1(int uneMoyenne1, int uneAdministration_réseau, int uneAnglais_technique, int uneBase_de_données, int uneCommunication_écrite, int uneConception_et_modélisation, int uneControle_de_gestion, int uneGestion_de_projet, int uneInfrastructure_et_scripting, int uneJSE, int uneSecurite, int uneSysteme_open_source, int uneSysteme_proprietaire, int uneTechnologie_web_dynamique, int uneDroit_informatique, int uneFramework_web, int uneOutils_informatique, int uneLivret_de_suivi, int uneManagement)
+        public annee1(double uneMoyenne1, double uneAdministration_réseau, double uneAnglais_technique, double uneBase_de_données, double uneCommunication_écrite, double uneConception_et_modélisation, double uneControle_de_gestion, double uneGestion_de_projet, double uneInfrastructure_et_scripting, double uneJSE, double uneSecurite, double uneSysteme_open_source, double uneSysteme_proprietaire, double uneTechnologie_web_dynamique, double uneDroit_informatique, double uneFramework_web, double uneOutils_informatique, double uneLivret_de_suivi, double uneManagement)
         {
             this.Moyenne1 = uneMoyenne1;
             this.Administration_réseau = uneAdministration_réseau;

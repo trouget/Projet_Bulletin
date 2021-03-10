@@ -33,7 +33,11 @@ namespace Projet_Bulletin
             double note_evalEntreprise = Convert.ToInt32(tbx_evalEtp.Text);
             double note_1annee = Convert.ToInt32(tbx_1annee.Text);
             double note_2annee = Convert.ToInt32(tbx_2annee.Text);
-            double resultatFinal = Convert.ToInt32(tbx_resultat.Text);
+
+
+            double resultatFinal;
+            resultatFinal = (note_soutenance + note_projPeda + note_evalEntreprise + (note_1annee * 1.5) + (note_2annee * 1.5)) / 6;
+            label_moyenne.Text = Convert.ToString(resultatFinal);
         }
     }
 }
