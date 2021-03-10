@@ -36,11 +36,11 @@ namespace Projet_Bulletin
             // eleves_dtgv
             // 
             this.eleves_dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.eleves_dtgv.Location = new System.Drawing.Point(172, 33);
-            this.eleves_dtgv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eleves_dtgv.Location = new System.Drawing.Point(0, 1);
+            this.eleves_dtgv.Margin = new System.Windows.Forms.Padding(4);
             this.eleves_dtgv.Name = "eleves_dtgv";
             this.eleves_dtgv.RowHeadersWidth = 51;
-            this.eleves_dtgv.Size = new System.Drawing.Size(725, 464);
+            this.eleves_dtgv.Size = new System.Drawing.Size(1065, 556);
             this.eleves_dtgv.TabIndex = 0;
             this.eleves_dtgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -50,7 +50,7 @@ namespace Projet_Bulletin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.eleves_dtgv);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Accueil";
             this.Text = "Accueil";
             ((System.ComponentModel.ISupportInitialize)(this.eleves_dtgv)).EndInit();

@@ -8,32 +8,32 @@ namespace Projet_Bulletin
 {
     class annee2
     {
-        public int id_bulletin2 { get; set; }
-        public int Moyenne2 { get; set; }
-        public int Administration_reseau { get; set; }
-        public int Anglais_technique { get; set; }
-        public int Application_hybride { get; set; }
-        public int Droit_informatique { get; set; }
-        public int Infrastructure_et_scripting { get; set; }
-        public int JEE { get; set; }
-        public int Outils_Mathematiques { get; set; }
-        public int Securite { get; set; }
-        public int Suivi_de_projet { get; set; }
-        public int Systeme_open_source { get; set; }
-        public int Systeme_proprietaire { get; set; }
-        public int Technologie_web_dynamique { get; set; }
-        public int Deploiement_serveur { get; set; }
-        public int Big_data { get; set; }
-        public int Arduino { get; set; }
-        public int Projet { get; set; }
-        public int Livret_de_suivi { get; set; }
+        public double id_bulletin2 { get; set; }
+        public double Moyenne2 { get; set; }
+        public double Administration_reseau { get; set; }
+        public double Anglais_technique { get; set; }
+        public double Application_hybride { get; set; }
+        public double Droit_informatique { get; set; }
+        public double Infrastructure_et_scripting { get; set; }
+        public double JEE { get; set; }
+        public double Outils_Mathematiques { get; set; }
+        public double Securite { get; set; }
+        public double Suivi_de_projet { get; set; }
+        public double Systeme_open_source { get; set; }
+        public double Systeme_proprietaire { get; set; }
+        public double Technologie_web_dynamique { get; set; }
+        public double Deploiement_serveur { get; set; }
+        public double Big_data { get; set; }
+        public double Arduino { get; set; }
+        public double Projet { get; set; }
+        public double Livret_de_suivi { get; set; }
 
         public annee2()
         {
 
         }
 
-        public annee2(int uneMoyenne2, int uneAdministration_reseau, int uneAnglais_technique, int uneApplication_hybride, int uneDroit_informatique, int uneInfrastructure_et_scripting, int uneJEE, int uneOutils_Mathematiques, int uneSecurite, int uneSuivi_de_projet, int uneSysteme_open_source, int uneSysteme_proprietaire, int uneTechnologie_web_dynamique, int uneDeploiement_serveur, int uneBig_data, int uneArduino, int uneProjet, int uneLivret_de_suivi)
+        public annee2(double uneMoyenne2, double uneAdministration_reseau, double uneAnglais_technique, double uneApplication_hybride, double uneDroit_informatique, double uneInfrastructure_et_scripting, double uneJEE, double uneOutils_Mathematiques, double uneSecurite, double uneSuivi_de_projet, double uneSysteme_open_source, double uneSysteme_proprietaire, double uneTechnologie_web_dynamique, double uneDeploiement_serveur, double uneBig_data, double uneArduino, double uneProjet, double uneLivret_de_suivi)
         {
             this.Moyenne2 = uneMoyenne2;
             this.Administration_reseau = uneAdministration_reseau;

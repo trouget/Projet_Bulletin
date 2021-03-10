@@ -67,6 +67,8 @@
             this.btn_retour = new System.Windows.Forms.Button();
             this.label_fixe = new System.Windows.Forms.Label();
             this.label_resultat = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_pdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -408,11 +410,31 @@
             this.label_resultat.Size = new System.Drawing.Size(0, 17);
             this.label_resultat.TabIndex = 77;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 78;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btn_pdf
+            // 
+            this.btn_pdf.Location = new System.Drawing.Point(1068, 648);
+            this.btn_pdf.Name = "btn_pdf";
+            this.btn_pdf.Size = new System.Drawing.Size(103, 26);
+            this.btn_pdf.TabIndex = 79;
+            this.btn_pdf.Text = "Générer pdf";
+            this.btn_pdf.UseVisualStyleBackColor = true;
+            // 
             // gen_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1329, 741);
+            this.Controls.Add(this.btn_pdf);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label_resultat);
             this.Controls.Add(this.label_fixe);
             this.Controls.Add(this.btn_retour);
@@ -502,5 +524,7 @@
         private System.Windows.Forms.Button btn_retour;
         private System.Windows.Forms.Label label_fixe;
         private System.Windows.Forms.Label label_resultat;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_pdf;
     }
 }

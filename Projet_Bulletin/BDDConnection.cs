@@ -22,7 +22,7 @@ namespace Projet_Bulletin
         private void InitConnexion()
         {
             // Création de la chaîne de connexion
-            string connectionString = "SERVER=localhost; PORT=3308; DATABASE=bdd_bulletinsasi; UID=root; PASSWORD=";
+            string connectionString = "SERVER=localhost; PORT=443; DATABASE=bdd_bulletinasi; UID=root; PASSWORD=";
             this.connection = new MySqlConnection(connectionString);
         }
 

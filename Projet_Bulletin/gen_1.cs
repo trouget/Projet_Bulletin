@@ -61,7 +61,12 @@ namespace Projet_Bulletin
             double resultat = ((reseau * 3) + (dev * 3) + (management * 2) + note_anglais + note_bdd + note_comEcrite + (note_gestProjet * 3) + note_droit + (note_maths * 3) + (note_livret * 12)) / 30;
             label_moyenne.Text = Convert.ToString(resultat);
             annee1 annee = new annee1(resultat, note_AdminRes, note_anglais, note_bdd, note_comEcrite, note_concepMod, note_contGest, note_gestProjet, note_infraScript, note_jse, note_secu, note_SystOpn, note_SystPro, note_technoWeb, note_droit, note_framework, note_maths, note_livret, note_mana);
+
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
