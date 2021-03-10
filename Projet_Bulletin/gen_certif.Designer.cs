@@ -43,6 +43,8 @@
             this.btn_retour = new System.Windows.Forms.Button();
             this.label_fixe = new System.Windows.Forms.Label();
             this.label_moyenne = new System.Windows.Forms.Label();
+            this.tbx_resultat = new System.Windows.Forms.TextBox();
+            this.CreerPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,19 +174,23 @@
             this.label_fixe.TabIndex = 72;
             this.label_fixe.Text = "Note certification : ";
             // 
-            // label_moyenne
+            // CreerPDF
             // 
-            this.label_moyenne.AutoSize = true;
-            this.label_moyenne.Location = new System.Drawing.Point(756, 561);
-            this.label_moyenne.Name = "label_moyenne";
-            this.label_moyenne.Size = new System.Drawing.Size(0, 17);
-            this.label_moyenne.TabIndex = 73;
+            this.CreerPDF.Location = new System.Drawing.Point(110, 503);
+            this.CreerPDF.Name = "CreerPDF";
+            this.CreerPDF.Size = new System.Drawing.Size(140, 23);
+            this.CreerPDF.TabIndex = 73;
+            this.CreerPDF.Text = "Créer un PDF";
+            this.CreerPDF.UseVisualStyleBackColor = true;
+            this.CreerPDF.Click += new System.EventHandler(this.CreerPDF_Click);
             // 
             // gen_certif
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1396, 812);
+            this.Controls.Add(this.CreerPDF);
+            this.Controls.Add(this.tbx_resultat);
             this.Controls.Add(this.label_moyenne);
             this.Controls.Add(this.label_fixe);
             this.Controls.Add(this.btn_retour);
@@ -224,6 +230,8 @@
         private System.Windows.Forms.Button btn_valider;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_retour;
+        private System.Windows.Forms.TextBox tbx_resultat;
+        private System.Windows.Forms.Button CreerPDF;
         private System.Windows.Forms.Label label_fixe;
         private System.Windows.Forms.Label label_moyenne;
     }
