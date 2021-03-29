@@ -92,7 +92,7 @@ namespace Projet_Bulletin
             gfx.DrawString("TITRE RNCP de Niveau 6 - N° de certification 26E32601 - Code NSF 326 n", font, XBrushes.Black, 186, 195);
 
             font = new XFont("Times New Roman", 8, XFontStyle.Regular);
-            gfx.DrawString("Nom de l'apprenti : COURBEZ Julian", font, XBrushes.Black, 90, 220);
+            gfx.DrawString("Nom de l'apprenti : DIZIERE Emma", font, XBrushes.Black, 90, 220);
             pen = new XPen(XColors.Black, 1);
             XBrush brush = new XSolidBrush(XColor.FromArgb(240, 240, 240));
             gfx.DrawRectangle(pen, brush, 75, 225, 450, 15);
@@ -123,30 +123,71 @@ namespace Projet_Bulletin
             gfx.DrawRectangle(pen, 335, 240, 190, 20);
             gfx.DrawString("Notes sur 20", font, XBrushes.Black, 414, 252);
 
+            gfx.DrawString("6", font, XBrushes.Black, 164, 268);
+            gfx.DrawRectangle(pen, 155, 260, 180, 10);
+            gfx.DrawRectangle(pen, 155, 260, 36, 10);
+            gfx.DrawRectangle(pen, 227, 260, 36, 10);
+            gfx.DrawRectangle(pen, 263, 260, 36, 10);
+            gfx.DrawString("Soutenance Orale ", font, XBrushes.Black, 80, 268);
+            gfx.DrawRectangle(pen, 75, 260, 450, 10);
+
+            gfx.DrawString("3", font, XBrushes.Black, 164, 278);
+            gfx.DrawRectangle(pen, 155, 270, 180, 10);
+            gfx.DrawRectangle(pen, 155, 270, 36, 10);
+            gfx.DrawRectangle(pen, 227, 270, 36, 10);
+            gfx.DrawRectangle(pen, 263, 270, 36, 10);
+            gfx.DrawString("Projet Pédagogique ", font, XBrushes.Black, 80, 278);
+            gfx.DrawRectangle(pen, 75, 270, 450, 10);
+
+            gfx.DrawString("6", font, XBrushes.Black, 164, 288);
+            gfx.DrawRectangle(pen, 155, 280, 180, 10);
+            gfx.DrawRectangle(pen, 155, 280, 36, 10);
+            gfx.DrawRectangle(pen, 227, 280, 36, 10);
+            gfx.DrawRectangle(pen, 263, 280, 36, 10);
+            gfx.DrawString("Evaluation Entreprise ", font, XBrushes.Black, 80, 288);
+            gfx.DrawRectangle(pen, 75, 280, 450, 10);
 
 
-            gfx.DrawString("Soutenance Oral : ", font, XBrushes.Black, 250, 300);
-            gfx.DrawString(note_soutenance.ToString(), font, XBrushes.Black, 350, 300);
+            gfx.DrawString("Moyenne", font, XBrushes.Black, 164, 298);
+            gfx.DrawRectangle(pen, 75, 290, 450, 10);
+            gfx.DrawRectangle(pen, 263, 290, 36, 10);
+            gfx.DrawRectangle(pen, 299, 290, 36, 10);
+            gfx.DrawRectangle(pen, 335, 290, 190, 10);
 
-            gfx.DrawString("Projet Pédagogique : ", font, XBrushes.Black, 250, 320);
-            gfx.DrawString(note_projPeda.ToString(), font, XBrushes.Black, 350, 320);
+            font = new XFont("Times New Roman", 8, XFontStyle.Bold);
+            gfx.DrawString("Evaluation en entreprise", font, XBrushes.Black, 228, 318);
+            pen = new XPen(XColors.Black, 0.8);
+            font = new XFont("Times New Roman", 8, XFontStyle.Regular);
+            gfx.DrawRectangle(pen, 75, 310, 450, 10);
+            gfx.DrawString("Projet Entreprise", font, XBrushes.Black, 164, 328);
+            gfx.DrawRectangle(pen, 75, 320, 450, 10);
+            gfx.DrawRectangle(pen, 263, 320, 36, 10);
+            gfx.DrawRectangle(pen, 299, 320, 36, 10);
+            gfx.DrawRectangle(pen, 335, 320, 190, 10);
 
-            gfx.DrawString("Evaluation Entreprise : ", font, XBrushes.Black, 250, 330);
-            gfx.DrawString(note_evalEntreprise.ToString(), font, XBrushes.Black, 350, 330);
+            font = new XFont("Times New Roman", 8, XFontStyle.Bold);
+            gfx.DrawString("Appréciation du conseil de promotion et du responsable de dispositif", font, XBrushes.Black, 198, 348);
+            pen = new XPen(XColors.Black, 0.8);
+            font = new XFont("Times New Roman", 8, XFontStyle.Regular);
+            gfx.DrawRectangle(pen, 75, 340, 450, 10);
+            gfx.DrawRectangle(pen, 75, 350, 450, 100);
 
-            gfx.DrawString("Moyenne de 1ère année : ", font, XBrushes.Black, 250, 340);
-            gfx.DrawString(note_1annee.ToString(), font, XBrushes.Black, 350, 340);
 
-            gfx.DrawString("Moyenne de 2ère année : ", font, XBrushes.Black, 250, 350);
-            gfx.DrawString(note_2annee.ToString(), font, XBrushes.Black, 350, 350);
+            gfx.DrawString("Rappel Moyenne année 1", font, XBrushes.Black, 134, 368);
+            gfx.DrawString("Rappel Moyenne année 2 semestre 1", font, XBrushes.Black, 134, 378);
+            gfx.DrawString("Moyenne Certification", font, XBrushes.Black, 134, 388);
+            gfx.DrawString("Total", font, XBrushes.Black, 134, 398);
 
-            gfx.DrawString("Resultat Final : ", font, XBrushes.Black, 250, 360);
-            gfx.DrawString(resultatFinal.ToString(), font, XBrushes.Black, 350, 360);
+            gfx.DrawRectangle(pen, 284, 360, 30, 10);
+            gfx.DrawRectangle(pen, 284, 370, 30, 10);
+            gfx.DrawRectangle(pen, 284, 380, 30, 10);
+            gfx.DrawRectangle(pen, 284, 390, 30, 10);
 
-            gfx.DrawString("Moyenne Final : ", font, XBrushes.Black, 250, 370);
-            gfx.DrawString(moyenne.ToString(), font, XBrushes.Black, 350, 370);
+            gfx.DrawString("A Dole le 10 mars 2021 ", font, XBrushes.Black, 290, 408);
+            gfx.DrawString("Le responsable de dispositif : Julian COURBEZ", font, XBrushes.Black, 290, 418);
 
-            const string filename = "Bulletin-notes.pdf";
+
+            const string filename = "Bulletin-notes-final.pdf";
             document.Save(filename);
 
             Process.Start(filename);

@@ -16,7 +16,7 @@ namespace Projet_Bulletin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new gen_certif());
+            Application.Run(new gen_2());
 
         /*    eleves eleve1 = new eleves(16, 12, "toto", "dupont", "asi2", DateTime.Now, 0);
 
